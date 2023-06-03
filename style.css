@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+:root {
+  /*if you want to change the color than you will be chanhe here jaha jaha pe vairialbe dale he waha waha pe color update ho jayega*/
+  --primary-color: #edf2fc;
+  --secondary-color: #212121;
+}
+.dark-theme {
+  --primary-color: #000106;
+  --secondary-color: #fff;
+}
+#icon {
+  width: 30px;
+  cursor: pointer;
+}
+nav ul {
+  flex: 1;
+  text-align: right;
+}
+.hero {
+  height: 100vh;
+  width: 100%;
+  background: var(--primary-color);
+  font-family: sans-serif;
+  position: relative;
+}
+nav {
+  width: 85%;
+  margin: auto;
+  padding: 20px 0;
+  display: flex;
+  align-items: center; /*align text text ko diye gaye navigation bar me centre me rakhe ga*/
+  justify-content: space-between;
+}
+.logo {
+  width: 100px; /*navigation bar me logo ki size wagera ke liye use kara he*/
+  cursor: pointer;
+}
+nav ul li {
+  /*manu ko vartical se horizontaly karne ke liye iska use kara he*/
+  display: inline-block;
+  list-style: none;
+  margin: 10px 20px;
+}
+
+nav ul li a {
+  text-decoration: none; /*manu ke nichhe se underline hatane ke liye kara he*/
+  color: var(--secondary-color);
+}
+nav ul li a:hover {
+  color: rgb(255, 221, 0);
+  font-weight: bold;
+}
+.info {
+  margin-top: 15%;
+  margin-left: 8%;
+}
+.info h1 {
+  font-size: 70px;
+  color: var(--secondary-color);
+  margin-bottom: 20px;
+}
+.info p {
+  color: var(--secondary-color);
+  line-height: 22px;
+}
+.info a {
+  /*CV ki button ke liye*/
+  background: var(--secondary-color);
+  padding: 10px 18px;
+  text-decoration: none;
+  color: var(--primary-color);
+  display: inline-block;
+  margin: 30px 0;
+  border-radius: 5px;
+}
+.info a:hover {
+  color: rgb(255, 221, 0);
+}
+.img-box {
+  /* img lagai he back and main wali*/
+  width: 45%;
+  height: 80%;
+  position: absolute;
+  bottom: 0;
+  right: 100px;
+}
+
+.img-box img {
+  /*image ki size ko edit kiya he*/
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  box-shadow: 0;
+  transform: translateX(-50%);
+  transition: bottom 1s, left 1s;
+}
+.img-box:hover .back-img {
+  bottom: 40px;
+}
+.img-box:hover .main-img {
+  left: 54%;
+}
+.projectgrid {
+  width: 50vh;
+  height: 10vh;
+  display: grid;
+  grid-template-columns: 100px 100px;
+}
+.pimage img {
+  width: 10vh;
+  height: 10vh;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <div class="hero">
+      <!-- nav tag upper navigation bar ke liye use kari he  -->
+      <nav>
+        <img src="logo.png" alt="no image" class="logo" />
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Services</a></li>
+        </ul>
+        <img src="moon.png" alt="no img" id="icon" />
+      </nav>
+      <div class="info">
+        <h1>I'm Ram</h1>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit.<br />
+          Commodi quas perferendis, dolor rem unde blanditiis!
+        </p>
+        <a href="">Download CV</a>
+      </div>
+      <div class="img-box">
+        <img src="patternn.png" alt="image not found" class="back-img" />
+        <img src="mypic.png" alt="image not found" class="main-img" />
+      </div>
+    </div>
+    <!-- <div class="projectgrid">
+      <div class="pimage">
+        <div><img src="p1.jpg" alt="P1 is not here" /></div>
+        <div><img src="p2.jpg" alt="P2 is not here" /></div>
+      </div>
+    </div> -->
+    <script>
+      var icon = document.getElementById("icon"); //ek icon naam ka variable banaya he jisme icon name ki ID call ki he
+      icon.onclick = function () {
+        document.body.classList.toggle("dark-theme");
+        if (document.body.classList.contains("dark-theme")) {
+          icon.src = "sun.png";
+        } else {
+          icon.src = "moon.png";
+        }
+      };
+    </script>
+    <form>
+      <input type="text" id="item" class="item" name="first" />
+    </form>
+  </body>
+</html>
